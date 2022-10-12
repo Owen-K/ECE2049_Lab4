@@ -29,7 +29,7 @@ static void ToggleLDAC(void);
 void ConfigTimer(unsigned long int frequency);
 
 static const unsigned int maxCode = 4095;
-static const unsigned int stepCount = 20;
+static const unsigned int stepCount = 12;
 
 static void TimerISR(void);
 

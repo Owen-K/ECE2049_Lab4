@@ -91,11 +91,11 @@ void SetSawtoothWave()
 
 void SetTriangleWave(unsigned int frequency)
 {
-    if (lastMode != DAC_TRIANGLE)
-    {
+//    if (lastMode != DAC_TRIANGLE)
+//    {
         ConfigTimer(frequency * stepCount);
         lastMode = DAC_TRIANGLE;
-    }
+//    }
 
     if (clock >= (stepCount/2))
         SetOutput((unsigned int)((((stepCount) - (clock)) * ((float)maxCode / stepCount))));

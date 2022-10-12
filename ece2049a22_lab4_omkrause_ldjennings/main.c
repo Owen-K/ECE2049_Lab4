@@ -29,7 +29,7 @@ int main(void)
 	setupADC12Scroll();
 	SetupDAC();
 
-	unsigned int pot;
+	unsigned long int pot;
 	unsigned char buttons;
 
 	while (1)
@@ -77,8 +77,9 @@ int main(void)
 	            break;
 	        case TRIANGLE:
 	            // Display triangle wave going from 0v to V_CC with 150Hz
-	            //SetTriangleWave(100 + (unsigned int)((pot * 1000) / 4095.0)); // Frequency ranges from 100Hz at pot = 0 to 1kHz when pot = 4095
-	            SetTriangleWave(50);
+	            SetTriangleWave(10 + (unsigned int)((pot * 100) / 4095)); // Frequency ranges from 100Hz at pot = 0 to 1kHz when pot = 4095
+                //SetTriangleWave(100 + (unsigned int)((pot * 900) / 4095)); // Frequency ranges from 100Hz at pot = 0 to 1kHz when pot = 4095
+	            //SetTriangleWave(50);
 	            break;
 	        }
 	    }
