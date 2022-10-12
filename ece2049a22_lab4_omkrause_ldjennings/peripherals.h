@@ -70,7 +70,7 @@ unsigned int getScrollVal(void);
 
 //void DACInit(void);
 //void DACSetValue(unsigned int dac_code);
-//void setupSPI_DAC(void);
+void setupSPI_DAC(void);
 void initLeds(void);
 void setLeds(unsigned char state);
 

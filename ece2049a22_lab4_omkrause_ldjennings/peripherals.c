@@ -348,7 +348,7 @@ void configDisplay(void)
     Graphics_flushBuffer(&g_sContext);
 }
 
-/*
+
 void setupSPI_DAC(void)
 {
 // ** Set UCSI A0 Reset=1 to configure control registers **
@@ -367,7 +367,7 @@ void setupSPI_DAC(void)
      // Enable UCSI A0
      UCB0CTL1 &= ~UCSWRST;
 }
-*/
+
 
 //------------------------------------------------------------------------------
 // Timer1 A0 Interrupt Service Routine
